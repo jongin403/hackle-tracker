@@ -41,6 +41,19 @@ const config = {
         include: /\.module\.css$/,
       },
       {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            },
+          },
+          'sass-loader',
+        ],
+      },
+      {
         test: /\.svg$/,
         use: 'file-loader',
       },
@@ -53,21 +66,6 @@ const config = {
               mimetype: 'image/png',
             },
           },
-        ],
-      },
-    ],
-    rules: [
-      {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-            },
-          },
-          'sass-loader',
         ],
       },
     ],

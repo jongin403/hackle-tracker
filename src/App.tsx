@@ -1,6 +1,6 @@
 import * as React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import Header from './components/Header/.';
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          E111dit <code>src/111App.tsx</code> and save to reload.
         </p>
         <a
           className="App-link"
