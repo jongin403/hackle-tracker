@@ -1,0 +1,23 @@
+.tabMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.menuList {
+  display: flex;
+  align-items: center;
+}
+
+.menuItem {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  .active {
+    background-color: #ff0000; // Replace with your desired color
+  }
+}
