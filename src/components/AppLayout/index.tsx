@@ -5,12 +5,13 @@ import TabMenu from '../TabMenu';
 import EventSequence from '../EventSequence';
 import EventDetail from '../EventDetail';
 import TabController from '../TabController';
-import { useState } from 'react';
+import { useMenuStore } from '../../stores/eventStore';
 
 const cx = classNames.bind(styles);
 
 const AppLayout = () => {
-  const [currentMenu, setCurrentMenu] = useState('event');
+  const { currentMenu, setMenu } = useMenuStore();
+
   return (
     <div className={styles.appLayout}>
       <TabMenu className={styles.tabMenu}></TabMenu>

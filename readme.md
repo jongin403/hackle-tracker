@@ -27,3 +27,12 @@ After the project has been built, a directory named `dist` has been created. You
 3. Enable _Developer mode_.
 4. Click _Load unpacked_.
 5. Select the `dist` directory.
+
+### src 폴더 하위
+
+- components
+- constants
+- hooks
+- stores
+- types
+- shared
